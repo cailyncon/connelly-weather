@@ -51,8 +51,7 @@ main {
 }
 
 .current-weather {
-  display: flex;
-  justify-content: space-between;
+  display: block;
 }
 
 .current-city {
