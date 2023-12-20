@@ -47,5 +47,16 @@ currentDateELement.innerHTML = formatDate(currentDate);
 function displayTemperature(response) {
   let temperature = Math.round(response.data.temperature.current);
   let tempElement = document.querySelector("#current-temp");
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windSpeedElement = document.querySelector("#wind-speed");
+  let iconElement = document.querySelector("#icon");
+
   tempElement.innerHTML = `${temperature}`;
+  descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = response.data.temperature.humidity;
+  windSpeedElement.innerHTML = response.data.wind.speed;
+
+  iconElement.innerHTML = `<img class="current-temperature-icon" src="${response.data.condition.icon_url}" />`;
+  console.log(response.data);
 }

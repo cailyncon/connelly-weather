@@ -1,10 +1,10 @@
 body {
   background: #f9f7fe;
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif, "Roboto", sans-serif;
 }
 
 a {
-  color: #885df1;
+  color: #084727;
 }
 
 .weather-app {
@@ -24,22 +24,27 @@ header {
 .search-input {
   background-color: #f9f7fe;
   border: none;
-  color: rgba(39, 33, 66, 0.4);
+  color: #2c2c2c;
   font-size: 16px;
   padding: 20px;
   width: 75%;
-  border-radius: 6px;
+  border-radius: 30px;
+}
+input:focus,
+input:active,
+input:hover {
+  outline: 2px solid #084727\;;
 }
 
 .search-button {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #885df1;
+  background-color: #084727;
   color: white;
   border: none;
   padding: 20px;
   line-height: 1;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 
 main {
@@ -48,26 +53,39 @@ main {
 
 .current-temperature {
   font-size: 48px;
+  text-align: center;
+  padding: 0 0 20px 0;
 }
 
 .current-weather {
   display: block;
+  margin: 0 auto;
 }
 
 .current-city {
   font-size: 38px;
   font-weight: 900;
+  color: #084727;
   margin: 0;
+  text-align: center;
+}
+
+.date-time {
+  text-align: center;
+  font-size: 16px;
+  padding: 8px 0 15px 0;
 }
 .current-details {
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .current-details strong {
-  color: #f65282;
+  color: #084727;
 }
 
 .current-temperature-icon {

@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
@@ -29,26 +31,30 @@
         </form>
       </header>
       <main>
+        <h1 class="current-city" id="current-city">Paris</h1>
+        <div class="date-time"><span id="current-date"></span></div>
         <div class="current-weather">
           <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span
-            ><span class="current-temperature-value" id="current-temp">24</span
-            ><span class="current-temperature-unit">°F</span>
+            <div class="icon-img" id="icon">
+              <img class="current-temperature-icon" src="" />
+            </div>
+            <span class="current-temperature-value" id="current-temp">24</span>
+            <span class="current-temperature-unit">°F </span>
           </div>
-          <div>
-            <h1 class="current-city" id="current-city">Paris</h1>
-            <p class="current-details">
-              <span id="current-date"></span>, moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
-            </p>
+          <div class="current-details">
+            <span id="description">moderate rain </span>
+            <div>Humidity: <span id="humidity">87</span>%</div>
+            <div>Wind: <span id="wind-speed">7.2</span>mph</div>
           </div>
         </div>
       </main>
       <footer>
         <p>
           This project was coded by
-          <a href="#" target="_blank">Cailyn Connelly</a> and is
-          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="https://github.com/cailyncon" target="_blank"
+            >Cailyn Connelly</a
+          >
+          and is <a href="#" target="_blank"> on GitHub</a> and
           <a href="#" target="_blank">hosted on Netlify</a>
         </p>
       </footer>
