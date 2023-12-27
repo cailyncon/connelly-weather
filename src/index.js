@@ -67,7 +67,7 @@ function getForecast(city) {
   let apiKey = "b84b065do096ab8b5a39fb9t38e99a64";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
   axios(apiUrl).then(displayForecast);
-  console.log(response.daily.temperature.day);
   let forecastDay = document.querySelector("#forecastDate");
-  forecastDay.innerHTML = response.daily.temperature;
+  forecastDay.innerHTML = response.daily.temperature.day;
+  console.log(response.daily.temperature.day);
 }
