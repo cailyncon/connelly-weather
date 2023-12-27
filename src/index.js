@@ -11,8 +11,8 @@ function search(event) {
 
 function getForecast(city) {
   let apiKey = "b84b065do096ab8b5a39fb9t38e99a64";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
-  axios(apiUrl).then(displayForecast);
+  let apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+  axios(apiUrlForecast).then(displayForecast);
 }
 
 function formatDate(date) {
