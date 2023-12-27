@@ -7,12 +7,8 @@ function search(event) {
   let apiKey = "b84b065do096ab8b5a39fb9t38e99a64";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayTemperature);
-}
 
-function getForecast(city) {
-  let apiKey = "b84b065do096ab8b5a39fb9t38e99a64";
-  let apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
-  axios(apiUrlForecast).then(displayForecast);
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -65,6 +61,11 @@ function displayTemperature(response) {
 
   iconElement.innerHTML = `<img class="current-temperature-icon" src="${response.data.condition.icon_url}" />`;
   console.log(response.data);
+}
+function getForecast(city) {
+  let apiKey = "b84b065do096ab8b5a39fb9t38e99a64";
+  let apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+  axios(apiUrlForecast).then(displayForecast);
 }
 
 function displayForecast(response) {
