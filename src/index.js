@@ -6,9 +6,13 @@ function search(event) {
   let city = searchInputElement.value;
   let apiKey = "b84b065do096ab8b5a39fb9t38e99a64";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
-  let apiUrlForecast = `api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(displayTemperature);
-  axios.get(apiUrlForecast).then(displayForecast);
+}
+
+function getForecast(city) {
+  let apiKey = "b84b065do096ab8b5a39fb9t38e99a64";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+  axios(apiUrl).then(displayForecast);
 }
 
 function formatDate(date) {
