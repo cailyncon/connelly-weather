@@ -110,7 +110,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 6px;
   max-width: 300px;
   margin: 0 auto;
 }
@@ -124,13 +124,13 @@ main {
 
 .weather-forecast-date {
   font-size: 24px;
-  margin: 16px 0 4px 0;
+  margin: 20px 0 4px 0;
   text-align: center;
 }
 
 .weather-forecast-temperatures {
   font-size: 22px;
-  margin: 16px 0 4px 0;
+  margin: 20px 0 4px 0;
   text-align: center;
 }
 
