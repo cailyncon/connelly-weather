@@ -118,8 +118,14 @@ main {
 .weather-forecast-icon {
   position: relative;
   top: -8px;
-  font-size: 20px;
+  font-size: 16x;
   margin-right: 5px;
+}
+
+.weather-forecast-date {
+  font-size: 24px;
+  margin: 10px 0 4px 0;
+  text-align: center;
 }
 
 footer {
